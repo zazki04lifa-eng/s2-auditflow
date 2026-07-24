@@ -1,0 +1,28 @@
+{
+  "name": "auditflow-ai",
+  "version": "2.0.0",
+  "description": "Audit Planning Assistant - AI-powered audit workflow tool",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "keywords": [
+    "audit",
+    "ai",
+    "flowchart",
+    "analysis"
+  ],
+  "author": "AuditFlow Team",
+  "license": "MIT",
+  "dependencies": {
+    "docx": "^9.7.1",
+    "drawflow": "^0.0.60",
+    "mammoth": "^1.12.0",
+    "pdfjs-dist": "^6.1.200"
+  }
+}

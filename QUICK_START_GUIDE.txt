@@ -1,0 +1,279 @@
+╔════════════════════════════════════════════════════════════════════════════╗
+║                  AUDITFLOW - 4 CASE STUDIES QUICK START                    ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+┌─ KEEMPAT STUDI KASUS ──────────────────────────────────────────────────────┐
+
+  📈 CASE 1: SIKLUS PENDAPATAN
+     Company: PT Digital Nusantara Teknologi
+     Type: SaaS / Cloud ERP Provider
+     Scope: Revenue Cycle (Prospecting → Cash Collection)
+     Risk Focus: Revenue recognition, deferred revenue, payment reconciliation
+     
+  📤 CASE 2: SIKLUS PENGELUARAN
+     Company: PT Prima Retail Indonesia
+     Type: Retail (180+ Supermarkets)
+     Scope: Expenditure Cycle (Purchase requisition → Payment)
+     Risk Focus: Unauthorized purchases, 3-way matching, duplicate payments
+     
+  💰 CASE 3: SIKLUS PENGGAJIAN
+     Company: PT Garuda Customer Service Indonesia
+     Type: BPO (3,800 employees)
+     Scope: Payroll Cycle (HR → Bank Transfer)
+     Risk Focus: Unauthorized changes, tax compliance, accuracy
+     
+  🏭 CASE 4: SIKLUS PRODUKSI
+     Company: PT Maju Plastik Indonesia
+     Type: Manufacturing (Kemasan Plastik)
+     Scope: Production Cycle (Sales Order → Finished Goods)
+     Risk Focus: Quality control, cost allocation, inventory obsolescence
+
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ LANGKAH-LANGKAH PENGGUNAAN ──────────────────────────────────────────────┐
+
+  STEP 1: Open Dashboard
+          └─ Klik logo atau tab "Dashboard"
+
+  STEP 2: Navigate to New Project
+          └─ Klik "New Project" di sidebar atau button di dashboard
+
+  STEP 3: Scroll to Case Studies
+          └─ Scroll ke bawah form "Buat Project Baru"
+          └─ Lihat section "📚 Atau Muat Studi Kasus"
+
+  STEP 4: Choose Case Study
+          └─ Klik salah satu dari 4 case study cards
+          └─ Pilih yang sesuai kebutuhan audit kamu
+
+  STEP 5: System Loads Project
+          └─ Toast: "Studi Kasus [nama] berhasil dimuat"
+          └─ Otomatis redirect ke Audit Planning Workspace
+
+  STEP 6: Start Audit Planning
+          └─ Stage 1 (Input): Narasi sudah terisi ✓
+          └─ Stage 2 (Flowchart): Ready untuk generate
+          └─ Stage 3 (Analysis): Ready untuk generate
+          └─ Stage 4 (Review): Ready untuk export
+
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ FITUR UTAMA UNTUK SETIAP CASE STUDY ──────────────────────────────────────┐
+
+  CASE 1 - REVENUE CYCLE (PT Digital Nusantara)
+  ────────────────────────────────────────────
+  Proses:  Marketing → Sales Proposal → Service Agreement → ERP Entry
+           → Project Implementation → Invoice Generation → Payment
+           → Reconciliation → Deferred Revenue
+  
+  Key Risks:
+  • Revenue recognition tidak tepat
+  • Deferred revenue calculation error
+  • Customer verification incomplete
+  • Payment reconciliation mismatch
+  • System integration accuracy
+  
+  Audit Focus:
+  • Completeness of revenue transactions
+  • Accuracy of pricing dan terms
+  • Proper deferred revenue treatment
+  • Payment collection dan reconciliation
+  • System-generated data accuracy
+
+  ─────────────────────────────────────────────────────────────────────────
+
+  CASE 2 - EXPENDITURE CYCLE (PT Prima Retail)
+  ────────────────────────────────────────────
+  Proses:  Stok Monitoring → PR → RFQ → Supplier Selection
+           → PO Issuance → Goods Receipt → Three-Way Matching
+           → Voucher Payable → Payment Approval → Internet Banking
+  
+  Key Risks:
+  • Unauthorized purchases
+  • Quality issues pada barang
+  • Receipt discrepancies (jumlah/jenis)
+  • Three-way match failures
+  • Duplicate payments
+  • Unauthorized approvals
+  
+  Audit Focus:
+  • Authorization controls
+  • Purchase requisition approval process
+  • Supplier management dan performance
+  • Goods receipt accuracy
+  • Invoice validation
+  • Payment approval segregation
+
+  ─────────────────────────────────────────────────────────────────────────
+
+  CASE 3 - PAYROLL CYCLE (PT Garuda Customer Service)
+  ───────────────────────────────────────────────────
+  Proses:  Recruitment → HRIS Entry → Daily Absensi
+           → Overtime Approval → Leave Tracking → Payroll Calculation
+           → Manager Review → Bank Transfer → Slip Distribution
+  
+  Key Risks:
+  • Unauthorized salary changes
+  • Incorrect deductions
+  • Missing employees dalam payroll
+  • Tax compliance violations
+  • Duplicate payments
+  • Unauthorized approvals
+  
+  Audit Focus:
+  • Employee master data accuracy
+  • Attendance system controls
+  • Overtime approval process
+  • Payroll calculation accuracy
+  • Tax deduction compliance
+  • Payment transfer authorization
+  • Employee self-service transparency
+
+  ─────────────────────────────────────────────────────────────────────────
+
+  CASE 4 - PRODUCTION CYCLE (PT Maju Plastik)
+  ────────────────────────────────────────────
+  Proses:  Sales Order → Master Production Schedule → MRP
+           → Material Requisition → Production Stages
+           → Quality Control → Finished Goods → Costing
+  
+  Key Risks:
+  • Production efficiency issues
+  • Quality control failures
+  • Material wastage
+  • Cost allocation inaccuracy
+  • Inventory obsolescence
+  • WIP valuation errors
+  
+  Audit Focus:
+  • Production planning accuracy
+  • Material management controls
+  • Quality assurance procedures
+  • Production efficiency tracking
+  • Inventory valuation
+  • Cost of goods produced calculation
+  • Reject product handling
+
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ SETELAH MEMILIH CASE STUDY ──────────────────────────────────────────────┐
+
+  Apa yang Sudah Otomatis Terisi:
+  ✓ Project name
+  ✓ Company information
+  ✓ Industry classification
+  ✓ Audit area
+  ✓ Framework (COSO)
+  ✓ Complete business process narrative
+  ✓ Process flow details (14-20 steps)
+  ✓ Key business risks (5-8 risiko)
+
+  Apa yang Bisa Kamu Lakukan:
+  
+  1. REVIEW INPUT (Stage 1)
+     • Lihat full narasi yang sudah diload
+     • Edit/tambah jika ada yang perlu disesuaikan
+     • Klik "Edit Narasi" untuk modify text
+  
+  2. GENERATE FLOWCHART (Stage 2)
+     • Pilih arah: Vertikal/Horizontal
+     • Pilih theme: Professional/Minimal/Clean/Corporate
+     • Klik "Generate Flowchart"
+     • Sistem auto-parse narasi → buat diagram
+     • Bisa edit node directly (add/remove/modify)
+  
+  3. GENERATE ANALYSIS (Stage 3)
+     • Sistem create:
+       - WCGW & Risk Assessment
+       - Internal Control Evaluation
+       - Audit Objective Mapping
+       - Test of Control Design
+       - Audit Program Template
+       - Working Paper Draft
+  
+  4. REVIEW & EXPORT (Stage 4)
+     • Lihat summary project
+     • Export ke format:
+       - PDF (untuk presentasi)
+       - Word (untuk editing)
+       - PNG (untuk embed)
+     • Pilih konten: Flowchart, WCGW, Control, Program
+
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ TIPS & BEST PRACTICES ────────────────────────────────────────────────────┐
+
+  ✓ Load ulang case study yang sama untuk audit berbeda → modify narasi
+  
+  ✓ Setiap load create project baru → bisa punya multiple projects
+  
+  ✓ Backup project via Export before modifying → save as PDF/Word
+  
+  ✓ Customize narasi sebelum generate flowchart untuk hasil lebih akurat
+  
+  ✓ Use "Muat Project" untuk quick-start, bukan perlu manual entry semua
+  
+  ✓ Flowchart bisa di-export PNG untuk presentation deck
+  
+  ✓ Audit program yang generated sudah testing-ready, tinggal execute
+  
+  ✓ Working paper template sudah include key risk areas per cycle
+
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ QUICK REFERENCE - MANA CASE STUDY YANG DIPILIH? ───────────────────────┐
+
+  Pilih Case 1 (REVENUE) jika:
+  • Audit industri SaaS/Software/Telco
+  • Focus pada subscription/recurring revenue
+  • Perlu understand online payment processing
+  • Deferred revenue treatment relevant
+
+  Pilih Case 2 (EXPENDITURE) jika:
+  • Audit retail/wholesale/distributor
+  • Multiple suppliers/procurement complexities
+  • Three-way matching relevant
+  • Goods receipt quality control penting
+
+  Pilih Case 3 (PAYROLL) jika:
+  • Audit manufacturing/services dengan banyak karyawan
+  • Focus pada HR controls dan accuracy
+  • Tax compliance penting
+  • Biometric/fingerprint systems used
+
+  Pilih Case 4 (PRODUCTION) jika:
+  • Audit manufacturing/production
+  • Complex production stages
+  • Quality control critical
+  • Cost accounting important
+
+└────────────────────────────────────────────────────────────────────────────┘
+
+┌─ TECHNICAL DETAILS ────────────────────────────────────────────────────────┐
+
+  File Locations:
+  • Case study data: js/case-studies.js
+  • Functions: loadCaseStudy(), getCaseStudies()
+  • UI: index.html (view-new-project section)
+  • Styling: css/style.css (.case-study-card classes)
+  • Logic: js/app.js (renderCaseStudies function)
+
+  Data Storage:
+  • localStorage: All data saved locally
+  • No server upload
+  • No internet required after first load
+  • Exportable for backup
+
+  Browser Support:
+  • Chrome/Edge/Firefox (latest)
+  • Safari (latest)
+  • Requires localStorage support
+  • ES6 JavaScript enabled
+
+└────────────────────────────────────────────────────────────────────────────┘
+
+╔════════════════════════════════════════════════════════════════════════════╗
+║                    READY TO USE - ENJOY AUDITING! 🚀                       ║
+╚════════════════════════════════════════════════════════════════════════════╝
+
+Version: 1.0 | Date: 16 July 2026 | Status: PRODUCTION READY
