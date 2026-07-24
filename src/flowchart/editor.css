@@ -1,0 +1,346 @@
+/* Interactive Flowchart Editor Styles */
+.drawflow {
+  background: #f7f9fb;
+  background-size: 20px 20px;
+  background-image: 
+    linear-gradient(to right, #e2e6ec 1px, transparent 1px),
+    linear-gradient(to bottom, #e2e6ec 1px, transparent 1px);
+}
+
+.drawflow .parent-node {
+  border: 2px solid #3d63a3;
+  border-radius: 8px;
+  min-width: 180px;
+  box-shadow: 0 4px 12px rgba(15, 31, 56, 0.12);
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.drawflow .parent-node:hover {
+  box-shadow: 0 8px 24px rgba(15, 31, 56, 0.2);
+}
+
+.drawflow .parent-node.selected {
+  border-color: #72d6ff;
+  box-shadow: 0 0 0 3px rgba(114, 214, 255, 0.3), 0 8px 24px rgba(15, 31, 56, 0.2);
+}
+
+/* Node Header */
+.drawflow_node header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--navy-500);
+  color: white;
+  border-radius: 6px 6px 0 0;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: move;
+}
+
+.drawflow_node header .node-icon {
+  font-size: 1rem;
+}
+
+.drawflow_node header .node-title {
+  flex: 1;
+}
+
+/* Node Content */
+.drawflow_node .node-content {
+  padding: 0.75rem;
+}
+
+.node-label-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e2e6ec;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.node-label-input:focus {
+  outline: none;
+  border-color: #3d63a3;
+}
+
+/* Delete Button */
+.node-delete-btn {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.node-delete-btn:hover {
+  background: rgba(229, 62, 62, 0.8);
+}
+
+/* Node Type Specific Styles */
+.start-node header {
+  background: #14a394;
+}
+
+.process-node header {
+  background: #3d63a3;
+}
+
+.decision-node header {
+  background: #d69e2e;
+}
+
+.document-node header {
+  background: #7c8494;
+}
+
+.terminator-node header {
+  background: #c53030;
+}
+
+/* Inputs and Outputs */
+.drawflow_inputs,
+.drawflow_outputs {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.drawflow_inputs {
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.drawflow_outputs {
+  position: absolute;
+  right: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input,
+.output {
+  width: 12px;
+  height: 12px;
+  background: #3d63a3;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.input:hover,
+.output:hover {
+  transform: scale(1.3);
+  background: #72d6ff;
+}
+
+/* Connection Lines */
+.drawflow .connection .main-path {
+  stroke: #2c4d80;
+  stroke-width: 3;
+}
+
+.drawflow .connection:hover .main-path {
+  stroke: #72d6ff;
+  stroke-width: 4;
+}
+
+/* WCGW Badge on Nodes */
+.wcgw-badge-overlay {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #e53e3e;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  box-shadow: 0 2px 8px rgba(229, 62, 62, 0.4);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.wcgw-badge-overlay.low {
+  background: #14a394;
+  box-shadow: 0 2px 8px rgba(20, 163, 148, 0.4);
+}
+
+.wcgw-badge-overlay.medium {
+  background: #d69e2e;
+  box-shadow: 0 2px 8px rgba(214, 158, 46, 0.4);
+}
+
+.wcgw-badge-overlay.high {
+  background: #e53e3e;
+}
+
+.wcgw-badge-overlay.critical {
+  background: #c53030;
+}
+
+/* Editor Toolbar */
+.editor-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background: var(--navy-50);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.toolbar-group {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.toolbar-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--gray-300);
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.toolbar-btn:hover {
+  border-color: var(--navy-500);
+  color: var(--navy-500);
+}
+
+.toolbar-btn.primary {
+  background: var(--navy-500);
+  border-color: var(--navy-500);
+  color: var(--white);
+}
+
+.toolbar-btn.primary:hover {
+  background: var(--navy-600);
+  border-color: var(--navy-600);
+}
+
+.toolbar-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Add Node Panel */
+.add-node-panel {
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  padding: 0.75rem;
+  z-index: 100;
+}
+
+.add-node-panel h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--navy-900);
+  margin-bottom: 0.5rem;
+}
+
+.node-type-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--gray-200);
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  color: var(--gray-700);
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 0.25rem;
+}
+
+.node-type-btn:hover {
+  border-color: var(--navy-500);
+  background: var(--navy-50);
+  color: var(--navy-700);
+}
+
+.node-type-btn .node-type-icon {
+  font-size: 1rem;
+}
+
+/* Status Bar */
+.editor-status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: var(--gray-50);
+  border-top: 1px solid var(--gray-200);
+  font-size: 0.75rem;
+  color: var(--gray-500);
+}
+
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--teal-500);
+}
+
+.status-dot.unsaved {
+  background: var(--amber-500);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .editor-toolbar {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .toolbar-group {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .add-node-panel {
+    top: auto;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
